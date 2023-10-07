@@ -1,7 +1,7 @@
-import { ContactItem } from 'components/ContactItem/ContactItem';
-import { List, ListItem } from './ContactList.styled';
 import { useSelector } from 'react-redux';
 import { getContacts, getFilter } from 'redux/selectors';
+import { ContactItem } from 'components/ContactItem/ContactItem';
+import { List, ListItem } from './ContactList.styled';
 
 const getСontactByFilter = (contacts, filter) =>
   contacts.filter(contact =>

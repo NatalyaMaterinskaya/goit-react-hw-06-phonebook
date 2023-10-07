@@ -1,5 +1,7 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import { useDispatch } from 'react-redux';
+import { addContact } from 'redux/contactsSlice';
 import {
   StyledForm,
   Label,
@@ -7,8 +9,6 @@ import {
   StyledErrorMessage,
   Btn,
 } from './ContactForm.styled';
-import { useDispatch } from 'react-redux';
-import { addContact } from 'redux/contactsSlice';
 
 const nameRegex =
   "^[a-zA-Zа-яА-Я]+(([' \\-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$";
